@@ -23,7 +23,7 @@ for temp_name in next_temp_ul_name.findAll('span', class_="today-hourly-weather_
 
 temp_hourly_value = [int(temp_value.replace('+', '').replace('°', '')) for temp_value in temp_hourly]
 
-plt.stem(plotlabel, temp_hourly_value)
+plt.plot(plotlabel, temp_hourly_value)
 plt.ylabel('°C', rotation=0)
 plt.xticks(rotation=45)
 plt.title('Wykres temperatury w Olsztynie')
