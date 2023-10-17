@@ -2,7 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 
-url = 'https://www.meteoprog.pl/pl/weather/Olsztyn/'
+miasto = "Olsztyn"
+
+url = f'https://www.meteoprog.pl/pl/weather/{miasto}/'
 
 response = requests.get(url)
 soup = BeautifulSoup(response.content, features='html.parser')
