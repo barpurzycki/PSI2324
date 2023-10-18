@@ -27,7 +27,7 @@ temp_hourly_value = [int(temp_value.replace('+', '').replace('°', '')) for temp
 
 plt.plot(plotlabel, temp_hourly_value)
 plt.ylabel('°C', rotation=0)
+plt.xlabel('Pora dnia')
 plt.xticks(rotation=45)
 plt.title('Wykres temperatury w Olsztynie')
 plt.show()
-
