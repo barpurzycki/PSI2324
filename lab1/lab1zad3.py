@@ -18,8 +18,8 @@ for item in range(min(len(data["values"]), 5)):
     values.append(data['values'][item]['value'])
     date.append(data['values'][item]['date'])
 
-plt.plot(values, date)
-plt.ylabel('Data pomiaru')
-plt.xlabel('Wartość czujnika')
+plt.plot(date, values)
+plt.xlabel('Data pomiaru')
+plt.ylabel('Wartość czujnika')
 plt.title('Wartość czujnika dla ostatnich 5 godzin') #Jeśli nie pokazuje dla x godziny, to znaczy, że value jest null
 plt.show()
